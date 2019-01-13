@@ -3,7 +3,7 @@ module.exports = {
     title: 'Personal Site of Jenny Olsen',
     author: 'Jenny Olsen',
     description: 'Personal Site of Jenny Olsen',
-    siteUrl: null,
+    siteUrl: 'https://jenniferolsen.github.io/',
   },
   pathPrefix: '/',
   plugins: [
