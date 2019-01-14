@@ -21,7 +21,7 @@ class SiteIndex extends React.Component {
           <meta name="description" content={siteDescription} />
         </Hemlet>
         <p>
-          Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          Hello world!! Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At
           augue eget arcu dictum varius duis. Vestibulum lectus mauris ultrices
           eros in cursus turpis. Blandit volutpat maecenas volutpat blandit
