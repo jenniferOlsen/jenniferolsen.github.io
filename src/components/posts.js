@@ -42,10 +42,10 @@ export default ({ data }) => {
                 </ImgContainer>
               )}
               <PostTitle>{node.frontmatter.title} </PostTitle>
-              <PostCompany>{node.frontmatter.company}</PostCompany>{' '}
-              <PostTags tags={node.frontmatter.tags} />
-              <p>{node.excerpt}</p>
             </PostLink>
+            <PostCompany>{node.frontmatter.company}</PostCompany>{' '}
+            <PostTags tags={node.frontmatter.tags} />
+            <p>{node.excerpt}</p>
             <hr />
           </div>
         )
