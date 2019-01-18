@@ -170,7 +170,7 @@ export default ({ title, author }) => (
           </StyledLink>
         </p>
         <p>
-          <StyledHref href={resume} rel="noopener" target="_blank">
+          <StyledHref href={resume} target="_blank">
             <FaFilePdf /> <span>Resume</span>
           </StyledHref>
         </p>
