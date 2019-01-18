@@ -10,7 +10,7 @@ const TagLink = styled(Link)`
 
 export default ({ tags }) => {
   return (
-    <>
+    <> 
       {tags.map((tag, index) => {
         let separator = ', '
         if (index + 1 === tags.length) {
