@@ -18,7 +18,7 @@ export default ({ tags }) => {
         }
         return (
           <span key={tag}>
-            <TagLink to={`tags/${tag}`}>{tag}</TagLink>
+            <TagLink to={`skills/${tag}`}>{tag}</TagLink>
             {separator}
           </span>
         )

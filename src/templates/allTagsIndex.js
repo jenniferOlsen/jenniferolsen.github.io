@@ -6,10 +6,10 @@ import Layout from '../components/layout'
 export default ({ data, pageContext }) => {
   return (
     <Layout>
-      <h3>List of Tags</h3>
+      <h3>Technical skills used in these projects</h3>
       <ul>
         {pageContext.tags.map(tag => {
-          const path = `/tags/${tag}`
+          const path = `/skills/${tag}`
 
           return (
             <li key={tag}>

@@ -10,6 +10,7 @@ import {
   FaFilePdf
 } from 'react-icons/fa'
 import resume from '../assets/resume.pdf'
+import me from '../assets/jennyolsen.jpeg'
 
 const Sidebar = styled.div`
   /* Device = Tablets, iPads (portrait) */
@@ -159,10 +160,7 @@ export default ({ title, author }) => (
       <SiteTitle>{title}</SiteTitle>
       <Desc>UI Engineer</Desc>
     </StyledLink>
-    <Logo
-      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDEyMDAiPgogIDxwYXRoIGQ9Ik02MDAgMEMyNjguNiAwIDAgMjY4LjYgMCA2MDBzMjY4LjYgNjAwIDYwMCA2MDAgNjAwLTI2OC42IDYwMC02MDBTOTMxLjQgMCA2MDAgMHpNMjY2LjYgOTMzLjNDMTc2LjEgODQyLjggMTMxIDcyNC42IDEyOS42IDYwNkw1OTQgMTA3MC40Yy0xMTguNi0xLjQtMjM2LjgtNDYuNS0zMjcuNC0xMzcuMXptNDM3LjcgMTI2LjFMMTQwLjYgNDk1LjdjNDcuNS0yMTAuMSAyMzUtMzY3LjEgNDU5LjQtMzY3LjEgMTU2LjkgMCAyOTUuNSA3NyAzODEuMiAxOTQuOUw5MTUuNiAzNzlDODQ1LjggMjc5LjUgNzMwLjUgMjE0LjMgNjAwIDIxNC4zYy0xNjcuNyAwLTMxMC4zIDEwNy43LTM2My4zIDI1Ny41bDQ5MS42IDQ5MS42YzEyMy40LTQzLjcgMjE4LTE0OC4yIDI0Ny42LTI3Ny42SDc3MS40VjYwMGgzMDBjMCAyMjQuNS0xNTcgNDExLjktMzY3LjEgNDU5LjR6IiBmaWxsPSIjNjM5Ii8+Cjwvc3ZnPgo="
-      alt={author}
-    />
+    <Logo src={me} alt={author} />
     <NameBoard>{author}</NameBoard>
     <MenuWrapper>
       <div>
@@ -202,8 +200,8 @@ export default ({ title, author }) => (
           </StyledHref>
         </p>
         <p>
-          <StyledLink to="/tags">
-            <FaHashtag /> <span>Tags</span>
+          <StyledLink to="/skills">
+            <FaHashtag /> <span>Skills</span>
           </StyledLink>
         </p>
       </div>
