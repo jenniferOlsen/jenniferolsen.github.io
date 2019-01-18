@@ -1,21 +1,11 @@
-# gatsby-minimal-portfolio-blog
+# Gatsby Starter Tech Blog
 
-GatsbyJS starter (based on [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog)) for a minimal portfolio website with blog. Suitable for developers.
+### Initial Setup
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+- Clone this repo
+- Run `yarn` or `npm install`
 
-`gatsby new gatsby-blog https://github.com/s-kris/gatsby-minimal-portfolio-blog`
+### Writing blog post
 
-Or [view the live demo here](https://saikrishna.me).
-
-## Running in development
-`npm install`
-
-`gatsby develop`
-
-## Quick Start
-
-1. Update data in src/data/\*.js files
-2. Update site name and description in gatsby-config.js
-3. Update images in src/assets/images/
-4. Update description in src/pages/index.js
+- Write your blog post in markdown format under `src/blog-posts`. Refer the existing markdown template for title and date.
+- Then run `npx gatsby develop` to load the page in your local machine. Usually loads in [http://localhost:8000](http://localhost:8000)

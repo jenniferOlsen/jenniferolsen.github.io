@@ -1,35 +1,53 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
+import styled from 'styled-components'
 
-import { rhythm } from '../utils/typography'
-import Header from '../components/Header'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Sidebar from './sidebar'
 
-class Layout extends React.Component {
-  render() {
-    const { children } = this.props
-    const importedStyle = this.props.style
-    const defaultStyle = {
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      maxWidth: rhythm(32),
-      padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+const Container = styled.div`
+  display: flex;
+  height: 100vh;
+`
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: scroll;
+  padding: 20px;
+  color: #7e7e7e;
+`
+
+const Query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        author
+      }
     }
-
-    const finalStyle = {
-      ...defaultStyle,
-      ...importedStyle,
-    }
-    return (
-      <div style={finalStyle}>
-        <Header />
-        <Navbar />
-        <br />
-        {children}
-        <Footer />
-      </div>
-    )
   }
-}
+`
 
-export default Layout
+export default ({ children }) => (
+  <StaticQuery
+    query={Query}
+    render={data => {
+      const { title, siteDescription, author } = data.site.siteMetadata
+      return (
+        <>
+          <Helmet>
+            <meta charSet="utf-8" />
+            <meta name="description" content={siteDescription} />
+            <title>{title}</title>
+          </Helmet>
+          <Container>
+            <Sidebar title={title} authorName={author} />
+            <Content>{children}</Content>
+          </Container>
+        </>
+      )
+    }}
+  />
+)

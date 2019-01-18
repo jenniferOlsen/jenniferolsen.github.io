@@ -1,13 +1,7 @@
 import Typography from 'typography'
-import Github from 'typography-theme-github'
+import bootstrapTheme from 'typography-theme-bootstrap'
 
-const typography = new Typography(Github)
-
-// Hot reload typography in development.
-if (process.env.NODE_ENV !== 'production') {
-  typography.injectStyles()
-}
+const typography = new Typography(bootstrapTheme)
 
 export default typography
 export const rhythm = typography.rhythm
-export const scale = typography.scale
