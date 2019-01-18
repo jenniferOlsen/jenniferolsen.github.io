@@ -40,8 +40,9 @@ const Sidebar = styled.div`
   width: 30%;
   background-color: #193549;
   color: #dcdcdc;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 25px;
 `
 
 const Logo = styled.img`
