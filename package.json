@@ -10,7 +10,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "now-build": "npm run build",
-    "deploy": "npm run release && gatsby build && gh-pages -d public -b master",
+    "deploy": "git co master && git merge dev && npm run release && gatsby build && gh-pages -d public -b master",
     "release": "cd public && git add --all && git commit -m \"Release at $(date)\" && git push -f"
   },
   "dependencies": {
