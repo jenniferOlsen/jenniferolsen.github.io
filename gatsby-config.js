@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Jenny Olsen | UI Engineer',
+    title: 'Jenny Olsen',
     author: 'Jenny Olsen',
-    description: 'Personal Site of Jenny Olsen',
+    description: 'Jenny Olsen | UI Engineer',
     siteUrl: 'https://jenniferolsen.github.io/'
   },
   plugins: [

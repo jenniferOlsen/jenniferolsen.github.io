@@ -6,8 +6,10 @@ import {
   FaUserSecret,
   FaLinkedin,
   FaGithub,
-  FaHashtag
+  FaHashtag,
+  FaFilePdf
 } from 'react-icons/fa'
+import resume from '../assets/resume.pdf'
 
 const Sidebar = styled.div`
   /* Device = Tablets, iPads (portrait) */
@@ -170,24 +172,8 @@ export default ({ title, author }) => (
           </StyledLink>
         </p>
         <p>
-          <StyledLink to="/about">
-            <FaUserSecret /> <span>About</span>
-          </StyledLink>
-        </p>
-        <p>
-          <StyledLink to="/tags">
-            <FaHashtag /> <span>Tags</span>
-          </StyledLink>
-        </p>
-      </div>
-      <div>
-        <p>
-          <StyledHref
-            href="https://www.linkedin.com/in/jennyaolsen/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <FaLinkedin /> <span>Linkedin</span>
+          <StyledHref href={resume} rel="noopener" target="_blank">
+            <FaFilePdf /> <span>Resume</span>
           </StyledHref>
         </p>
         <p>
@@ -198,6 +184,27 @@ export default ({ title, author }) => (
           >
             <FaGithub /> <span>Github</span>
           </StyledHref>
+        </p>
+      </div>
+      <div>
+        <p>
+          <StyledLink to="/about">
+            <FaUserSecret /> <span>About</span>
+          </StyledLink>
+        </p>
+        <p>
+          <StyledHref
+            href="https://www.linkedin.com/in/jennyaolsen/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FaLinkedin /> <span>Linkedin</span>
+          </StyledHref>
+        </p>
+        <p>
+          <StyledLink to="/tags">
+            <FaHashtag /> <span>Tags</span>
+          </StyledLink>
         </p>
       </div>
     </MenuWrapper>
