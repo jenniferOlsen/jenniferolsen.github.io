@@ -33,7 +33,7 @@ const createTagPages = (createPage, posts) => {
   const tags = Object.keys(postsByTag)
 
   createPage({
-    path: '/tags',
+    path: '/skills',
     component: allTagsIndexTemplate,
     context: {
       tags: tags.sort()
@@ -44,7 +44,7 @@ const createTagPages = (createPage, posts) => {
     const posts = postsByTag[tagName]
 
     createPage({
-      path: `/tags/${tagName}`,
+      path: `/skills/${tagName}`,
       component: singleTagIndexTemplate,
       context: {
         posts,

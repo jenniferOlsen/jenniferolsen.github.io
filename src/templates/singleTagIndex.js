@@ -8,7 +8,7 @@ export default ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <h1>Posts about {tagName}</h1>
+      <h1>Projects using {tagName}</h1>
       <Posts data={posts} />
     </Layout>
   )
