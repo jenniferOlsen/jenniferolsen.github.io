@@ -7,6 +7,7 @@ import Sidebar from './sidebar'
 
 const Container = styled.div`
   display: flex;
+  min-height: 100vh;
 `
 
 const Content = styled.div`
