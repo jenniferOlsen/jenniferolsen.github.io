@@ -20,11 +20,11 @@ export default () => (
       within an agile(-ish) environment. My time working in agencies proved I
       can do it all (front end, back end, native apps, acting as lead, and
       managing deployment). My time as a freelancer showed that I thrive in an
-      environment that allows me a great deal of indepence. But I do my best
-      work when part of a highly-collaborative, cross-functional team, and I’m
-      passionate about building beautiful products that work well for everybody.
-      Ultimately, I’m driven by the potential usefulness of my work and derive
-      meaning from the degree to which I can help people.
+      environment that allows me a great deal of independence, but I do my best
+      work when part of a highly-collaborative, cross-functional team. I’m
+      passionate about building beautiful products that work well for everybody,
+      and I’m driven by the potential usefulness of my work and derive meaning
+      from the degree to which I can help people.
     </p>
   </Layout>
 )
