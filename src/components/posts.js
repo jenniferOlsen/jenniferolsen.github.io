@@ -5,6 +5,10 @@ import Img from 'gatsby-image'
 import { rhythm } from '../utils/typography'
 import PostTags from '../components/postTags'
 
+const Container = styled.div`
+  max-width: 90%;
+`
+
 const PostTitle = styled.h3`
   margin-bottom: ${rhythm(1 / 4)};
 `
@@ -21,7 +25,7 @@ const PostLink = styled(Link)`
   font-style: italic;
 `
 const ImgContainer = styled.div`
-  max-height: 200px;
+  max-height: 250px;
   overflow: hidden;
   margin-bottom: 20px;
 `
@@ -31,7 +35,7 @@ export default ({ data }) => {
     <>
       {data.map(({ node }) => {
         return (
-          <div key={node.id}>
+          <Container key={node.id}>
             <PostLink to={node.fields.slug}>
               {node.frontmatter.image && (
                 <ImgContainer>
@@ -47,7 +51,7 @@ export default ({ data }) => {
             <PostTags tags={node.frontmatter.tags} />
             <p>{node.excerpt}</p>
             <hr />
-          </div>
+          </Container>
         )
       })}
     </>
