@@ -9,9 +9,7 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "now-build": "npm run build",
-    "deploy": "git co master && git merge dev -m \"Release at $(date)\" && npm run release && gatsby build && gh-pages -d public -b master && git co dev",
-    "release": "cd public && git push -f"
+    "deploy:github": "npm run build && node ./scripts/deploy-github"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.9.4",
