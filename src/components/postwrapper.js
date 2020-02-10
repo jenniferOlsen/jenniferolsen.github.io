@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 
 export const PostWrapper = styled.div`
-  margin: auto;
+  margin: 0 auto;
   padding: 30px;
   max-width: 720px;
   font-size: 14px;
 
   @media (max-width: 414px) {
     padding: 70px 16px 0;
+  }
+
+  .gatsby-image-wrapper {
+    border: 1px solid #193549;
   }
 
   h1 {
