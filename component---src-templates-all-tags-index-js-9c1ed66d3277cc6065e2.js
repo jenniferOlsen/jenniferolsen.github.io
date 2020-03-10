@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{YSlf:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=n("Wbzz"),c=n("Bl7J");t.default=function(e){e.data;var t=e.pageContext;return l.a.createElement(c.a,null,l.a.createElement("h3",null,"Technical skills used in these projects"),l.a.createElement("ul",null,t.tags.map((function(e){var t="/skills/"+e;return l.a.createElement("li",{key:e},l.a.createElement(r.Link,{to:t},e))}))))}}}]);
+//# sourceMappingURL=component---src-templates-all-tags-index-js-9c1ed66d3277cc6065e2.js.map
